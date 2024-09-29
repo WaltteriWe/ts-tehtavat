@@ -78,8 +78,7 @@ const updateUserData = async (
 // Profile DOM and Edit Profile Form
 const addUserDataToDom = (user: User): void => {
   if (!emailTarget || !usernameTarget || !avatarTarget) {
-    et;
-    return;
+    throw new Error('ei elementtejä :DDDDDD eat ass');
   }
 
   emailTarget.innerHTML = user.email;
